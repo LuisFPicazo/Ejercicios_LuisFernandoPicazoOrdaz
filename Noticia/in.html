@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--headers de texto-->
+    <h1></h1> <!--No debe de existir más de 1 h1 en el documento-->
+    <h6></h6>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat odit expedita, corporis quibusdam reprehenderit quidem atque nostrum vel aspernatur in ex sequi veritatis ea odio perferendis ut fugiat! Perspiciatis, reprehenderit!
+    </p> 
+    <span>hola 1</span> <span>Hola 2</span>
+    <ol>
+        <li>hola</li>
+        <li>adios</li>
+        <li>hola2</li>
+    </ol>
+
+    <ul>
+        <li>desorden</li>
+        <li>2</li>
+    </ul>
+
+    <a href="#titulo">Ir al titulo</a>
+    <br>
+    <a href="https://google.com" target="_blank">google</a>
+
+    <h2 id="titulo">Titulo</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat odit expedita, corporis quibusdam reprehenderit quidem atque nostrum vel aspernatur in ex sequi veritatis ea odio perferendis ut fugiat! Perspiciatis, reprehenderit!
+    </p> 
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat odit expedita, corporis quibusdam reprehenderit quidem atque nostrum vel aspernatur in ex sequi veritatis ea odio perferendis ut fugiat! Perspiciatis, reprehenderit!
+    </p> 
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat odit expedita, corporis quibusdam reprehenderit quidem atque nostrum vel aspernatur in ex sequi veritatis ea odio perferendis ut fugiat! Perspiciatis, reprehenderit!
+    </p> 
+
+    <form action="">
+        <fieldset>
+            <legend>Registro</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" pattern="[0-9]">
+            <input type="submit">
+        </fieldset>
+    </form>
+
+    <video controls>
+        <source src="">
+    </video>
+
+
+
+    <header></header>
+    <nav>
+        <ul>
+            <li></li>
+        </ul>
+    </nav>
+    <aside></aside>
+    <article></article>
+    <main></main>
+    <section></section>
+    <footer></footer>
+
+    <figure>
+        <figcaption>Descripción de la foto</figcaption>
+    </figure>
+
+    <details>
+        <summary>Ver mas</summary>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, temporibus rerum, veniam eligendi accusantium aperiam, alias omnis similique aliquam suscipit assumenda quidem ipsa sed reiciendis maiores doloremque inventore corrupti consequatur.</p>
+    </details>
+
+    <details>
+        <label for="">Ver mas detalles con label</label>
+    </details>
+
+    <button onclick="openModal()">Abrir modal</button>
+
+    <dialog><!--  forma para hacer una modal -->
+        <h2>titulo de la modal</h2>
+        <button onclick="closeModal()">Cerrar</button>
+    </dialog>
+
+    <meter value="5" min="0" max="10"></meter>
+
+    <input type="text" list="colores">
+
+    <datalist id="colores">
+        <option value="Azul">Azul</option>
+        <option value="Rojo">Rojo</option>
+        <option value="Verde">Verde</option>
+    </datalist>
+
+
+    <script>
+        function openModal(params) {
+            const modal = document.querySelector('dialog');
+            modal.showModal()
+        }
+
+        function closeModal(params) {
+            const modal = document.querySelector('dialog');
+            modal.close()
+        }
+    </script>
+</body>
+</html>
